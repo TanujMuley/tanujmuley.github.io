@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automating Follow-Ups Without Being Annoying — Tanuj Muley</title>
+  <meta name="description" content="How to combine AI and automation to write follow-up emails that sound human, get replies, and don't damage relationships.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="progress-bar"></div>
+
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Tanuj <span>Muley</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu"
+        onclick="this.nextElementSibling.classList.toggle('open')">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="blog.html">Blog</a></li>
+        <li><a class="nav-cta" href="contact.html">Work with me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="post-hero">
+      <div class="post-hero-inner">
+        <span class="post-tag">Automation</span>
+        <h1>Automating Follow-Ups Without Being Annoying</h1>
+        <p class="post-meta">Tanuj Muley · April 2025 · 5 min read</p>
+      </div>
+    </div>
+
+    <article class="post-content">
+      <a href="blog.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to blog
+      </a>
+
+      <p>
+        Automated follow-ups have a reputation problem. Most people have been on the receiving end of one —
+        a generic "Just checking in!" sent at 9 AM on a Tuesday, clearly from a CRM, clearly written
+        by no one. They feel like spam even when they're not.
+      </p>
+      <p>
+        The irony is that follow-ups done well are genuinely valuable. Most business relationships don't die
+        from too many touchpoints — they die from the wrong ones, at the wrong time, with the wrong message.
+        The goal of this post is to show you how to automate the volume without losing the quality.
+      </p>
+
+      <div class="post-divider"></div>
+
+      <h2>Why most automated follow-ups fail</h2>
+      <p>
+        There are three main failure modes:
+      </p>
+      <ul>
+        <li><strong>Generic openers.</strong> "Hope this email finds you well." It doesn't. And everyone knows it was generated.</li>
+        <li><strong>No personalisation signal.</strong> The email could have been sent to anyone. If the recipient can tell it's a template, you've already lost.</li>
+        <li><strong>Wrong timing.</strong> Following up two days after a proposal is different from following up two weeks after a call that went cold. The sequence matters as much as the content.</li>
+      </ul>
+      <p>
+        Automation amplifies what you put into it. If your base message is weak, sending it faster and
+        at higher volume just annoys more people faster.
+      </p>
+
+      <h2>The approach: AI writes, automation sends</h2>
+      <p>
+        Separate the drafting problem from the sending problem. Use AI to write follow-ups that sound
+        like you — specific, purposeful, appropriately brief. Then use an automation tool to handle
+        the triggering and delivery at the right time.
+      </p>
+      <p>
+        You don't need a complex stack. The basics work:
+      </p>
+      <ul>
+        <li><strong>AI drafting:</strong> ChatGPT, Copilot, or any LLM with a good prompt</li>
+        <li><strong>Automation:</strong> Power Automate, Outlook rules, or Zapier — depending on what you're already using</li>
+        <li><strong>CRM or spreadsheet:</strong> wherever you're tracking who needs what follow-up</li>
+      </ul>
+
+      <h2>Writing follow-ups that sound human</h2>
+      <p>
+        The key is giving AI enough context to write something specific. The less specific your prompt,
+        the more generic the output. Here's a template I use in workshops:
+      </p>
+      <div class="prompt-box">
+        <strong>Prompt</strong>
+        Write a follow-up email from [Your name] to [Contact name] at [Company].
+        Context: We spoke on [date] about [topic/project]. They expressed interest in [specific thing]
+        but said they needed time to [review / discuss internally / check budget].
+        Goal of this email: check in without pressure, remind them of the next step,
+        and make it easy to reply.
+        Tone: professional but warm. Length: 3–4 short sentences. No generic openers.
+      </div>
+      <p>
+        What you get back will feel like something a real person wrote — because the underlying intent is
+        specific and genuine. The AI just helps you say it faster and more consistently.
+      </p>
+      <p>
+        Compare that to the alternative: "Write a follow-up email." That prompt produces the emails that
+        get ignored.
+      </p>
+
+      <h2>Setting up a simple follow-up sequence</h2>
+      <p>
+        For outreach or collections scenarios, a three-touch sequence covers most situations:
+      </p>
+      <ul>
+        <li><strong>Day 3 after no response:</strong> Short, direct. Reference the original message. Assume they missed it, not that they ignored it.</li>
+        <li><strong>Day 10:</strong> Add a new angle — a relevant piece of information, a resource, or a question. Give them a reason to reply beyond the original ask.</li>
+        <li><strong>Day 21:</strong> The graceful exit. "I'll assume timing isn't right — happy to reconnect if circumstances change." This message often gets the most responses.</li>
+      </ul>
+      <p>
+        Use AI to draft each of the three touchpoints with the context prompt above. Save them as templates.
+        Then use Power Automate or your CRM's workflow engine to trigger them based on status changes or
+        date conditions.
+      </p>
+
+      <h2>The one rule that makes automation feel human</h2>
+      <p>
+        Every automated message should contain at least one thing that couldn't have been sent to anyone else.
+        A reference to the specific conversation you had. A detail about their situation. A question
+        only relevant to their context.
+      </p>
+      <p>
+        That one personalisation signal does more work than any amount of friendly language. It tells the
+        recipient: this was written for you, not queued for a list.
+      </p>
+      <p>
+        If your CRM captures notes from calls or meetings, feed those notes into your AI prompt. You'll get
+        follow-ups that reference the actual conversation — and those get replied to.
+      </p>
+
+      <h2>Where to draw the line</h2>
+      <p>
+        Automation is a multiplier, not a replacement for judgment. Some situations should never
+        get an automated response: a complaint, a relationship in crisis, a major decision point.
+        Those get a personal message, written by a human, because the stakes are high enough that
+        a generic follow-up would actively set you back.
+      </p>
+      <p>
+        Build that judgment into your process. Flag high-stakes contacts in your CRM and exclude them
+        from automated sequences. The time you save on routine follow-ups goes back into the conversations
+        that actually need you.
+      </p>
+
+      <div class="post-divider"></div>
+
+      <p>
+        The short version: use AI to write follow-ups that are specific and genuinely useful, then use
+        automation to make sure they go out reliably and on time. Done right, your contacts won't
+        notice the automation — they'll just notice that you're consistently on top of things.
+      </p>
+      <p>
+        If you want to set this up for your team — whether it's sales, collections, or account management —
+        <a href="contact.html">get in touch</a>. This is the kind of workflow we build together in the
+        Full-Day Workshop.
+      </p>
+
+    </article>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© 2025 Tanuj Muley · AI Productivity Trainer · Greater Toronto Area</p>
+      <nav class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://linkedin.com/in/tanujmuley" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -3,75 +3,260 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home – Tanuj Ashok Muley | AI Productivity Trainer</title>
-  <link rel="icon" type="image/svg+xml" href="assets/images/headshot.svg">
+  <title>Tanuj Muley — AI Productivity Trainer</title>
+  <meta name="description" content="Hands-on AI training for business teams in the Greater Toronto Area. I help teams save 5–10 hours a month with practical workshops on prompting, reporting, and automation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Reading progress -->
+  <div id="progress-bar"></div>
+
   <header>
     <nav>
-      <div class="logo">Tanuj&nbsp;Ashok&nbsp;Muley</div>
+      <a class="logo" href="index.html">Tanuj <span>Muley</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu"
+        onclick="this.nextElementSibling.classList.toggle('open')">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
       <ul>
         <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="career.html">Career</a></li>
-        <li><a href="ai-consulting.html">AI Consulting</a></li>
-        <li><a href="photography.html">Photography</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="nav-cta" href="contact.html">Work with me</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero hero-has-bg" style="--hero-image: url('assets/images/hero-bg.svg');">
-      <div class="hero-inner">
-        <h1>AI trainer by day, photography sidekick by night.</h1>
-        <p class="muted">Helping teams work smarter with AI, automation, and a little humor.</p>
-        <a class="btn" href="ai-consulting.html">Discover my services</a>
+
+    <!-- ─── HERO ─── -->
+    <section class="hero" style="position:relative;overflow:hidden;">
+      <!-- Animated background orbs -->
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+
+      <div class="hero-layout">
+
+        <!-- LEFT: Text content -->
+        <div class="hero-content">
+          <div class="hero-badge" style="animation:fade-up 0.6s ease forwards;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Greater Toronto Area · Available for workshops &amp; consulting
+          </div>
+          <h1 style="animation:fade-up 0.6s 0.1s ease both;">
+            AI Training That
+            <span class="hl gradient-text-anim">Actually Sticks</span>
+          </h1>
+          <p id="typewriter" data-text="I help business teams save time with AI — not theory, not hype. Practical workshops that turn AI tools into daily habits your team will actually use." style="font-size:1.1rem;max-width:560px;margin-top:16px;animation:fade-up 0.6s 0.2s ease both;"></p>
+          <div class="hero-actions" style="animation:fade-up 0.6s 0.3s ease both;">
+            <a href="services.html" class="btn btn-primary">See Training Packages</a>
+            <a href="about.html" class="btn btn-ghost">About me →</a>
+          </div>
+          <div class="hero-tags" style="animation:fade-up 0.6s 0.45s ease both;">
+            <span class="hero-tag"><span class="hero-tag-dot"></span>Microsoft Copilot</span>
+            <span class="hero-tag"><span class="hero-tag-dot"></span>ChatGPT</span>
+            <span class="hero-tag"><span class="hero-tag-dot"></span>Power Automate</span>
+            <span class="hero-tag"><span class="hero-tag-dot"></span>Prompt Engineering</span>
+            <span class="hero-tag"><span class="hero-tag-dot"></span>Gemini</span>
+          </div>
+        </div>
+
+        <!-- RIGHT: Visual card -->
+        <div class="hero-visual" style="animation:fade-up 0.7s 0.5s ease both;">
+          <div class="visual-card">
+            <div class="vc-header">
+              <span class="vc-dot r"></span>
+              <span class="vc-dot y"></span>
+              <span class="vc-dot g"></span>
+              <span class="vc-title">AI Workspace · Team session</span>
+            </div>
+            <div class="vc-body">
+              <div class="vc-row">
+                <span class="vc-icon">✉️</span>
+                <span class="vc-text">Email drafted &amp; polished</span>
+                <span class="vc-badge time">2 sec</span>
+              </div>
+              <div class="vc-row">
+                <span class="vc-icon">📊</span>
+                <span class="vc-text">Monthly report generated</span>
+                <span class="vc-badge done">Done</span>
+              </div>
+              <div class="vc-row">
+                <span class="vc-icon">🗂️</span>
+                <span class="vc-text">CRM notes auto-filled</span>
+                <span class="vc-badge done">Done</span>
+              </div>
+              <div class="vc-row">
+                <span class="vc-icon">🤝</span>
+                <span class="vc-text">Follow-up sequence live</span>
+                <span class="vc-badge time">Running</span>
+              </div>
+            </div>
+            <div class="vc-divider"></div>
+            <div class="vc-footer">
+              <span class="vc-footer-icon">⚡</span>
+              <span class="vc-footer-label">Time saved today —</span>
+              <span class="vc-footer-num" id="vc-saved">0 min</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section class="container">
-      <div class="grid two">
-        <div class="card">
-          <h2>What I do</h2>
-          <p>I design hands-on workshops that teach employees to use AI safely and effectively for everyday tasks: emails, reports, CRM notes, and simple automations.</p>
-          <a href="ai-consulting.html">See training modules →</a>
+    <!-- ─── STATS ─── -->
+    <div class="stats" style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+      <div class="stat reveal">
+        <div class="num"><span data-count="10" data-suffix="+">10+</span></div>
+        <p>Years in business operations &amp; automation</p>
+      </div>
+      <div class="stat reveal reveal-d1">
+        <div class="num" style="font-size:2rem;">5 – 10</div>
+        <p>Hours saved per employee, per month</p>
+      </div>
+      <div class="stat reveal reveal-d2">
+        <div class="num"><span data-count="3">3</span></div>
+        <p>Formats: pilot, full-day, and 8-week program</p>
+      </div>
+    </div>
+
+    <!-- ─── WHAT I DO ─── -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">What I Do</span>
+          <h2>Practical AI for the way your team actually works</h2>
+          <p>No coding required. No jargon. Just tools and prompts your team can start using on Monday morning.</p>
         </div>
-        <div class="card">
-          <h2>Who I am</h2>
-          <p>Collections Manager turned AI productivity coach. I like clean workflows, good metrics, and cricket highlights.</p>
-          <a href="about.html">Read my story →</a>
+        <div class="what-grid">
+          <div class="what-card glow grad-border reveal tilt">
+            <div class="what-icon">✉️</div>
+            <div>
+              <h3>Email &amp; Communication</h3>
+              <p>Write faster, clearer emails. Summarise long threads. Draft polished replies in half the time.</p>
+            </div>
+          </div>
+          <div class="what-card glow grad-border reveal reveal-d1 tilt">
+            <div class="what-icon">📊</div>
+            <div>
+              <h3>Reporting &amp; Docs</h3>
+              <p>Generate first-draft reports, meeting summaries, and structured updates — from rough notes to polished output.</p>
+            </div>
+          </div>
+          <div class="what-card glow grad-border reveal reveal-d2 tilt">
+            <div class="what-icon">🗂️</div>
+            <div>
+              <h3>CRM &amp; Admin Work</h3>
+              <p>Cut the copy-paste. Auto-fill CRM notes, call summaries, and follow-up tasks from conversations.</p>
+            </div>
+          </div>
+          <div class="what-card glow grad-border reveal reveal-d3 tilt">
+            <div class="what-icon">🛡️</div>
+            <div>
+              <h3>Safe &amp; Responsible Use</h3>
+              <p>Clear policies on what to share, what not to, and how to verify AI output — so your team stays compliant.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="container">
-      <h2>Latest from the blog</h2>
-      <div class="post-grid">
-        <article class="post">
-          <img src="assets/images/gallery-1.svg" alt="Post cover">
-          <div class="content">
-            <span class="tag">AI</span>
-            <h3>5 prompts to save 30 minutes a day</h3>
-            <p class="muted">Practical prompts for email, meetings, and reporting.</p>
+    <!-- ─── HOW IT WORKS ─── -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">How It Works</span>
+          <h2>From first call to <span class="gradient-text">confident team</span></h2>
+          <p>Three steps. No long procurement cycles, no generic slide decks.</p>
+        </div>
+        <div class="steps steps-wrap">
+          <div class="step reveal">
+            <div class="step-num">1</div>
+            <h3>Discovery Call</h3>
+            <p>We talk about your team's current workflows, the repetitive tasks eating time, and what "better" looks like for your context.</p>
           </div>
-        </article>
-        <article class="post">
-          <img src="assets/images/gallery-2.svg" alt="Post cover">
-          <div class="content">
-            <span class="tag">Photography</span>
-            <h3>Behind the scenes: candid magic</h3>
-            <p class="muted">How we plan and capture real moments during weddings.</p>
+          <div class="step reveal reveal-d1">
+            <div class="step-num">2</div>
+            <h3>Custom Workshop</h3>
+            <p>I design the session around your actual tools and tasks — not generic demos. Live builds, real examples, immediate practice.</p>
           </div>
-        </article>
+          <div class="step reveal reveal-d2">
+            <div class="step-num">3</div>
+            <h3>Sustained Habits</h3>
+            <p>Playbooks, follow-up Q&amp;A, and optional weekly office hours so skills don't evaporate when the workshop ends.</p>
+          </div>
+        </div>
       </div>
-      <a href="blog.html">Explore all posts →</a>
     </section>
+
+    <!-- ─── BLOG PREVIEW ─── -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">From the Blog</span>
+          <h2>Practical AI, <span class="gradient-text">no fluff</span></h2>
+          <p>Short reads that give you something you can use today.</p>
+        </div>
+        <div class="blog-grid">
+          <a class="post-card reveal tilt" href="post-5-prompts.html">
+            <div class="post-cover cover-1">⚡</div>
+            <div class="post-body">
+              <span class="post-tag">Productivity</span>
+              <h3>5 Prompts to Save 30 Minutes a Day</h3>
+              <p>Practical prompts for email, meetings, and reporting that work right out of the box.</p>
+              <div class="post-meta">May 2025 · 4 min read</div>
+            </div>
+          </a>
+          <a class="post-card reveal reveal-d1 tilt" href="post-automating-followups.html">
+            <div class="post-cover cover-2">🤝</div>
+            <div class="post-body">
+              <span class="post-tag">Automation</span>
+              <h3>Automating Follow-Ups Without Being Annoying</h3>
+              <p>How to combine automation with a human tone so your outreach actually gets replies.</p>
+              <div class="post-meta">Apr 2025 · 5 min read</div>
+            </div>
+          </a>
+        </div>
+        <div class="text-center mt-32 reveal">
+          <a href="blog.html" class="btn btn-ghost">View all posts →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA ─── -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2>Ready to save your team hours every week?</h2>
+          <p>Whether you want a quick pilot or a full program, let's figure out what makes sense for your team.</p>
+          <a href="contact.html" class="btn btn-primary">Book a free discovery call</a>
+        </div>
+      </div>
+    </section>
+
   </main>
+
   <footer>
-    <p>© 2025 Tanuj Ashok Muley. Powered by caffeine and curiosity.</p>
+    <div class="footer-inner">
+      <p>© 2025 Tanuj Muley · AI Productivity Trainer · Greater Toronto Area</p>
+      <nav class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://linkedin.com/in/tanujmuley" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </nav>
+    </div>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

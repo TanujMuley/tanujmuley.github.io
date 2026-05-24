@@ -3,60 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog – Tanuj Ashok Muley</title>
-  <link rel="icon" type="image/svg+xml" href="assets/images/headshot.svg">
+  <title>Blog — Tanuj Muley · AI Productivity</title>
+  <meta name="description" content="Practical AI tips for business teams. No fluff — just prompts, tactics, and workflows you can use today.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="progress-bar"></div>
+
   <header>
     <nav>
-      <div class="logo">Tanuj&nbsp;Ashok&nbsp;Muley</div>
+      <a class="logo" href="index.html">Tanuj <span>Muley</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu"
+        onclick="this.nextElementSibling.classList.toggle('open')">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
       <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="career.html">Career</a></li>
-        <li><a href="ai-consulting.html">AI Consulting</a></li>
-        <li><a href="photography.html">Photography</a></li>
         <li><a class="active" href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="nav-cta" href="contact.html">Work with me</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container">
-    <h1>Blog</h1>
-    <p class="muted">Two streams: AI & Productivity, and Photography & Creativity.</p>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Blog</span>
+          <h2>Practical AI, <span class="gradient-text">no fluff</span></h2>
+          <p>Short reads packed with prompts, tactics, and workflows you can put to work today. No theory, no hype.</p>
+        </div>
 
-    <div class="post-grid">
-      <article class="post">
-        <img src="assets/images/gallery-1.svg" alt="Post cover">
-        <div class="content">
-          <span class="tag">AI</span>
-          <h3>5 prompts to save 30 minutes a day</h3>
-          <p class="muted">Practical prompts for email, meetings, and reporting.</p>
+        <div class="blog-grid">
+
+          <a class="post-card reveal tilt" href="post-5-prompts.html">
+            <div class="post-cover cover-1">⚡</div>
+            <div class="post-body">
+              <span class="post-tag">Productivity</span>
+              <h3>5 Prompts to Save 30 Minutes a Day</h3>
+              <p>Practical prompts for email, meetings, and reporting that work right out of the box — no setup required.</p>
+              <div class="post-meta">May 2025 · 4 min read</div>
+            </div>
+          </a>
+
+          <a class="post-card reveal reveal-d1 tilt" href="post-automating-followups.html">
+            <div class="post-cover cover-2">🤝</div>
+            <div class="post-body">
+              <span class="post-tag">Automation</span>
+              <h3>Automating Follow-Ups Without Being Annoying</h3>
+              <p>How to combine automation with a human tone so your outreach actually gets replies instead of unsubscribes.</p>
+              <div class="post-meta">Apr 2025 · 5 min read</div>
+            </div>
+          </a>
+
         </div>
-      </article>
-      <article class="post">
-        <img src="assets/images/gallery-2.svg" alt="Post cover">
-        <div class="content">
-          <span class="tag">Photography</span>
-          <h3>Behind the scenes: candid magic</h3>
-          <p class="muted">How we plan and capture real moments during weddings.</p>
+
+        <div class="text-center mt-40" style="padding: 40px 0; border-top: 1px solid var(--border); margin-top: 48px;">
+          <p style="margin-bottom: 16px;">More posts coming soon. Want to get notified?</p>
+          <a href="contact.html" class="btn btn-ghost">Drop me a note →</a>
         </div>
-      </article>
-      <article class="post">
-        <img src="assets/images/gallery-3.svg" alt="Post cover">
-        <div class="content">
-          <span class="tag">AI</span>
-          <h3>Automating follow‑ups without being annoying</h3>
-          <p class="muted">Human tone + automation = better replies.</p>
-        </div>
-      </article>
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Tanuj Ashok Muley. All rights reserved.</p>
+    <div class="footer-inner">
+      <p>© 2025 Tanuj Muley · AI Productivity Trainer · Greater Toronto Area</p>
+      <nav class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://linkedin.com/in/tanujmuley" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </nav>
+    </div>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
